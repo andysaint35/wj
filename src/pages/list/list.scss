@@ -1,0 +1,92 @@
+.bg{
+	background:url(#{$img-path}/question/bg.jpg) no-repeat center center;
+	position:absolute; left:0;
+	top:0; 
+	width:100%; 
+	height:100%;
+	background-size:cover;
+}
+.box{
+	border-radius:24px;
+	box-shadow:0 0 10px #999;
+	padding:10px;
+	background-color:#f2f2f2;
+	background-image:url(#{$img-path}/question/title_bg.png);
+	background-repeat:no-repeat;
+	background-position:top left;
+	background-size:100% auto;
+	max-width:550px;
+	overflow:hidden;
+	width:85%;
+	margin:10px auto 0;
+	.title{
+		padding-top:0px;
+		height:110px;
+		text-align:center;
+		color:#fff;
+		.cn {
+			font-size:22px;
+		}
+		.en{
+			font-size:12px;
+		}
+	}
+}
+
+.content{
+	height:340px; position:relative;
+	padding:10px;
+	.topMask{
+		position:absolute;
+		top:0; width:100%;
+		left:0;
+		height:80px;
+		z-index:11;
+		background-image: linear-gradient(180deg, #f2f2f2, transparent 100%, transparent 20%);
+	}
+
+	.bottomMask{
+		position:absolute;
+		bottom:0px; width:100%;
+		left:0;
+		height:80px;
+		z-index:11;
+		background-image: linear-gradient(180deg, transparent, #f2f2f2 100%, transparent 20%);
+	}
+	.listBox{
+		overflow:auto;
+		height:320px;
+		position:relative;
+		ul li{
+			font-size:18px;
+			text-align:center;
+			font-weight:bold;
+			margin:3px 0;
+		}
+	}
+}
+
+.btnBox{
+	display:flex;
+	text-align:center;
+	width:85%;
+	margin:0 auto;
+	.btn1{
+		flex:1 1 30px;
+		display:block;
+		margin:20px auto 0;
+		width:160px;
+		height:40px;
+		background:url('#{$img-path}/list/btn1.png') no-repeat center center;
+		background-size:contain;
+	}
+	.btn2{
+		flex:1 1 30px;
+		display:block;
+		margin:20px auto 0;
+		width:160px;
+		height:40px;
+		background:url('#{$img-path}/list/btn2.png') no-repeat center center;
+		background-size:contain;
+	}
+}

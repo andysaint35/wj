@@ -1,0 +1,117 @@
+.bg{
+	background:url(#{$img-path}/question/bg.jpg) no-repeat center center;
+	position:absolute; left:0;
+	top:0; 
+	width:100%; 
+	height:100%;
+	background-size:cover;
+}
+.box{
+	border-radius:24px;
+	box-shadow:0 0 10px #999;
+	padding:10px;
+	background-color:#fff;
+	background-image:url(#{$img-path}/question/title_bg.png);
+	background-repeat:no-repeat;
+	background-position:top left;
+	background-size:100% auto;
+	max-width:550px;
+	overflow:hidden;
+	width:85%;
+	margin:10px auto 0;
+	.title{
+		padding-top:0px;
+		height:110px;
+		text-align:center;
+		color:#fff;
+		.cn {
+			font-size:22px;
+		}
+		.en{
+			font-size:12px;
+		}
+	}
+}
+
+.content{
+	height:360px; position:relative;
+	.questionImg{ width:320px; margin-left:10px; position:relative; z-index:10;
+	}
+	.option{
+		position:absolute;
+		top:160px;
+		left:20px;
+		width:80%;
+		z-index:11;
+		li {
+			margin:2px 0 12px;
+			padding:6px 0;
+			height:38px;
+			position:relative;
+			input { vertical-align:middle;}
+			img { vertical-align:middle; width:30px;}
+			&.correct{
+				background-image: linear-gradient(270deg, #d56260, #fff 80%, transparent 20%);
+			}
+			.imgCorrect{ position:absolute; right:0; top:-10px; width:80px;}
+		}
+	}
+	.optionForCheck{
+		z-index:5;
+	}
+}
+
+.timeCount{
+	background:#e06664;
+	border-radius:15px;
+	height:30px;
+	position:relative;
+	padding:4px;
+	overflow:hidden;
+	.timeShow{
+		position:absolute;
+		right:40px;
+		height:30px;
+		line-height:30px;
+		top:0;
+		color:#e06664;
+		z-index:11;
+	}
+	i.lock{
+		background:url('#{$img-path}/question/ico_time.png') no-repeat;
+		height:22px;
+		width:22px;
+		background-size:contain;
+		display:block;
+		position:absolute; right:4px; top:4px;
+		z-index:10;
+	}
+	.lock_bg{
+		height:22px;
+		border-radius:11px;
+		background:#e06664;
+		margin-left:19px;
+	}
+	.animateLock{
+		
+		display:block;
+		background:#fff;
+		position:absolute;
+		right:10px;
+		top:4px;
+		border-radius:11px;
+		height:22px;
+		width:50%;
+		transition: width 2s linear;
+	}
+}
+
+.next{
+	display:block;
+	margin:20px auto 0;
+	width:223px;
+	height:58px;
+	background:url('#{$img-path}/question/submit.png') no-repeat;
+	background-size:contain;
+
+}

@@ -1,0 +1,88 @@
+.bg{
+	background:url(#{$img-path}/question/bg.jpg) no-repeat center center;
+	position:absolute; left:0;
+	top:0; 
+	width:100%; 
+	height:100%;
+	background-size:cover;
+}
+.box{
+	border-radius:28px;
+	box-shadow:0 0 10px #999;
+	padding:10px;
+	background-color:#f2f2f2;
+	background-image:url(#{$img-path}/fullscore/title.png);
+	background-repeat:no-repeat;
+	background-position:top left;
+	background-size:100% auto;
+	max-width:550px;
+	overflow:hidden;
+	width:85%;
+	margin:10px auto 0;
+	&.failure{
+		background-image:url(#{$img-path}/failure/title.png);
+	}
+	.title{
+		padding-top:0px;
+		height:200px;
+		text-align:center;
+		color:#fff;
+		.cn {
+			font-size:22px;
+		}
+		.en{
+			font-size:12px;
+		}
+	}
+
+	.board{
+		display:block;
+		width:200px;
+		height:90px;
+		background-image:url(#{$img-path}/fullscore/board.png);
+		background-repeat:no-repeat;
+		background-size:contain;
+		margin:0 auto;
+	}
+}
+
+.content{
+	height:250px; 
+	padding:10px;
+	.contentTitle{
+		text-align:center;
+		font-size:18px;
+		color:#3a3a3a;
+		p{
+			margin-top:5px;
+			font-size:10px;
+			line-height:12px;
+			margin-bottom:40px;
+		}
+	}
+}
+
+.btnBox{
+	display:flex;
+	text-align:center;
+	width:85%;
+	margin:0 auto;
+	.btn1{
+		flex:1 1 30px;
+		display:block;
+		margin:20px auto 0;
+		width:160px;
+		height:40px;
+		background:url('#{$img-path}/fullscore/btn1.png') no-repeat center center;
+		background-size:contain;
+	}
+	.btn2{
+		flex:1 1 30px;
+		display:block;
+		margin:20px auto 0;
+		width:160px;
+		height:40px;
+		background:url('#{$img-path}/fullscore/btn2.png') no-repeat center center;
+		background-size:contain;
+	}
+}

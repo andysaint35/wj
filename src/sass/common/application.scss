@@ -1,0 +1,15 @@
+@import './_animation.scss';
+@import './_base.scss';
+@import './_grid.scss';
+@import './_mixins.scss';
+@import './_reset.scss';
+@import './_variable.scss';
+
+
+/*上传文件*/
+input[name=file]{
+	visibility:hidden;
+	position:absolute;
+	top:0;
+	left:0;
+}
