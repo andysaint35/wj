@@ -1,5 +1,5 @@
 .bg{
-	background:url(#{$img-path}/question/bg.jpg) no-repeat center center;
+	background:url(#{$img-path}/question/bg.jpg) no-repeat center center #d8dede;
 	position:absolute; left:0;
 	top:0; 
 	width:100%; 
@@ -17,11 +17,11 @@
 	background-size:100% auto;
 	max-width:550px;
 	overflow:hidden;
-	width:85%;
+	width:320px;
 	margin:10px auto 0;
 	.title{
 		padding-top:0px;
-		height:110px;
+		height:90px;
 		text-align:center;
 		color:#fff;
 		.cn {
@@ -34,14 +34,15 @@
 }
 
 .content{
-	height:360px; position:relative;
+	margin-top:-20px;
+	height:340px; position:relative;
 	.questionImg{ width:320px; margin-left:10px; position:relative; z-index:10;
 	}
 	.option{
 		position:absolute;
 		top:160px;
 		left:20px;
-		width:80%;
+		width:90%;
 		z-index:11;
 		li {
 			margin:2px 0 12px;
@@ -115,3 +116,24 @@
 	background-size:contain;
 
 }
+
+
+
+input[type=radio]{
+            font-size:1em;
+			-o-appearance: none; -webkit-appearance: none;-moz-appearance:none;
+            display: inline-block;
+            height: 14px;
+            width: 14px;
+            background: url("#{$img-path}/question/no.png") no-repeat;
+            background-size: 14px 14px;
+        }
+        input[type=radio]:checked{
+            font-size:1em;
+            content:' ';
+            visibility: visible;
+            height: 1em;
+            width: 1em;
+            background: url("#{$img-path}/question/yes.png") no-repeat;
+            background-size: 1em 1em;
+        }

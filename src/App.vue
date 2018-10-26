@@ -19,7 +19,8 @@ section#main{
   bottom:0;
   height:100%;
   -webkit-overflow-scrolling: touch;
-  overflow: auto;
+  overflow-y: auto;
+  overflow-x: hidden;
   }
 
   .slide-left-enter-active {

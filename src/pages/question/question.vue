@@ -10,7 +10,7 @@
        			<img :src=imgUrl class="questionImg" />
        			<ul class="option">
        				<li v-for="(item, index) in selectArray" >
-       					<input type="radio" name="options" @click="answerSelect" :value="item.value" /><img :src="item.imgUrl">
+       					<input type="radio" class="magic-radio" name="options" @click="answerSelect" :value="item.value" /><img :src="item.imgUrl">
        				</li>
        			</ul>
        			<ul class="option optionForCheck">

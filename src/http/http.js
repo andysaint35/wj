@@ -2,7 +2,7 @@ import axios from 'axios';
 import encryptSign from './sign';
 import { loading, toast } from 'mz-ui';
 import qs from 'qs';
-
+//http://47.99.129.160:3000
 var HOST = 'http://127.0.0.1:3000'
 var test_host = HOST;
 //HOST += '/feserver';

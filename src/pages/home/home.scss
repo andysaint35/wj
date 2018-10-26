@@ -1,22 +1,26 @@
+
 .bg{
-	background:url(#{$img-path}/home/bg.jpg) no-repeat center center;
-	position:absolute; left:0;
+	background:url(#{$img-path}/home/bg.jpg) no-repeat center -80px #d8dede;
+	position:absolute; left:50%;
 	top:0; 
-	width:100%; 
+	margin-left:-225px;
+	width:450px;
 	height:100%;
-	background-size:cover;
+	min-height:667px;
+	background-size:100% auto;
+
 }
 
+
+.block{ height:520px;}
+
 .btn{
-	position:absolute;
-	left:50%;
-	bottom:20px;
 	a{
 		
 		width:223px;
 		height:58px;
 		display:block;
-		margin-left:-111px;
+		margin:0 auto;
 	}
 	.btn1{
 		background:url(#{$img-path}/home/btn1.png) no-repeat center center;

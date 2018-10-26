@@ -16,14 +16,14 @@ THE 5 LUCKY WINNERS WILL BE NOTIFIED VIA EMAIL</p>
                      <div class="formBox">
                            <div class="formLine">
                                  <div class="label">
-                                       姓名<br />
-                                       NAME
+                                       邮箱<br />
+                                       E-mail
                                  </div>
                                  <div class="text">
                                        <input name="infoName" ref="infoName" />
                                        <p>
-                                          *请填写您的姓名<br />
-                                          *Please state your name
+                                          *请填写公司邮箱地址<br />
+                                          *Please state your company email address
                                        </p>
                                  </div>
                            </div>

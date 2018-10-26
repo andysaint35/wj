@@ -54,10 +54,18 @@ export default {
     this.timeCountDown();
   },
   activated(){
+    this.hasSelected=[];
+     var query = this.$route.query;
+    
+    this.userName = query.name;
+    this.userTel = query.tel;
+
     if(this.isMounted){
       this.isMounted= false;
     }
     else{
+      this.totalImg=[];
+      this.getQuestion();
       this.currentNum=0;
       this.time = this.totalTime;
       this.timeCountDown();
@@ -91,7 +99,7 @@ export default {
             return false;
           }
           else{
-            if(res.data.score>=10){
+            if(res.data.score==10){
                 this.$router.replace('/fullscore?isFail=false');
             }
             else{

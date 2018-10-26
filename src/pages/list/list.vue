@@ -11,7 +11,7 @@
        			<div class="topMask"></div>
        			<div class="listBox">
        				<ul>
-       					<li v-for="item in listData">{{item.name}}</li>
+       					<li v-for="item in listData">{{item.tel}}</li>
        					
        				</ul>
        			</div>

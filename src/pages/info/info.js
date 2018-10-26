@@ -34,6 +34,10 @@ export default {
         toast.info('请正确填写手机号');
         return false;
       }
+      if(!this.$refs.infoName.value.match(/^([a-zA-Z0-9])+@([a-zA-Z0-9])+(\.[a-zA-Z0-9])+/)){
+        toast.info('请正确填写邮箱');
+        return false;
+      }
       this.$router.replace('/question?name='+this.$refs.infoName.value+'&tel='+this.$refs.infoTel.value);
     }
   }
